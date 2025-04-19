@@ -2,7 +2,7 @@
 
 <img src="https://love2d.org/w/images/f/f5/love-logo-0.10.png" width="300" alt="LÖVE Logo">
 
-[![LÖVE Version](https://img.shields.io/badge/L%C3%96VE-11.4%2B-FF6EC7.svg)](https://love2d.org/)
+[![LÖVE Version](https://img.shields.io/badge/L%C3%96VE-11.5%2B-FF6EC7.svg)](https://love2d.org/)
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-In_Development-yellow.svg)]()
 
@@ -35,7 +35,7 @@ Stay tuned as we develop this project further and reveal more details about the 
 
 ### Prerequisites
 
-- [LÖVE](https://love2d.org/) 11.4 or newer
+- [LÖVE](https://love2d.org/) 11.5 or newer
 
 ### How to Play
 
