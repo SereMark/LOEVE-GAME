@@ -1,0 +1,80 @@
+# PROPRIETARY SOFTWARE LICENSE AGREEMENT
+
+**Copyright © 2025 Sere Gergő Márk and Sere Bálint. All Rights Reserved.**
+
+## 1. DEFINITIONS
+
+**"Software"** refers to the computer program known as "Untitled LÖVE Game" and all associated files, documentation, and assets contained in this repository.
+
+**"Owners"** refers to Sere Gergő Márk and Sere Bálint.
+
+**"User"** or **"You"** refers to any individual or entity accessing or using the Software.
+
+## 2. GRANT OF LIMITED RIGHTS
+
+By accessing this Software, you are granted a **limited, non-transferable, non-exclusive right** to:
+
+a) View and examine the source code for personal, educational purposes only.
+
+b) Download and run the Software for personal use only.
+
+c) Create and maintain a personal copy of the repository for private use.
+
+## 3. RESTRICTIONS
+
+You are expressly prohibited from:
+
+a) Distributing, sharing, or publishing the Software or any portion thereof in any form.
+
+b) Using the Software or any portion of it for any commercial purpose whatsoever.
+
+c) Creating derivative works based on the Software.
+
+d) Removing or modifying any copyright notices, attributions, or license information.
+
+e) Reverse engineering, decompiling, or disassembling any compiled portions of the Software except as permitted by applicable law.
+
+f) Sublicensing, renting, leasing, or transferring your limited rights to any other person or entity.
+
+g) Using the Software to create competing products.
+
+h) Claiming the Software or any part of it as your own work.
+
+## 4. INTELLECTUAL PROPERTY
+
+All title, ownership, and intellectual property rights related to the Software remain with the Owners. The Software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
+
+## 5. NO WARRANTIES
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE OWNERS DO NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR THAT DEFECTS WILL BE CORRECTED.
+
+## 6. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE OWNERS BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF THE OWNERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+## 7. TERMINATION
+
+This license is effective until terminated. It will terminate automatically without notice if you fail to comply with any provision of this license. Upon termination, you must destroy all copies of the Software in your possession.
+
+## 8. GOVERNING LAW
+
+This license shall be governed by and construed in accordance with the laws of Hungary, without giving effect to any principles of conflicts of law.
+
+## 9. ENTIRE AGREEMENT
+
+This license constitutes the entire agreement between you and the Owners concerning the Software and supersedes all prior or contemporaneous oral or written communications, proposals, and representations with respect to the Software.
+
+## 10. ATTRIBUTION REQUIREMENT
+
+Any mention of the Software in any context must include proper attribution:
+
+```
+"Untitled LÖVE Game" by Sere Gergő Márk and Sere Bálint
+https://github.com/SereMark/LOEVE-GAME
+```
+
+---
+
+BY USING, VIEWING, OR DOWNLOADING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE.
+
+For inquiries regarding this license or permissions beyond its scope, please contact the Owners.
