@@ -1,5 +1,3 @@
-# 🎮 Untitled LÖVE Game
-
 <div align="center">
 
 <img src="https://love2d.org/w/images/f/f5/love-logo-0.10.png" width="300" alt="LÖVE Logo">
