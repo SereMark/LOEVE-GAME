@@ -18,6 +18,8 @@ function GameState:switch(name, ...)
         self.current:exit()
     end
     
+    UI:clearElements()
+
     self.current = self.states[name]
     self.current:enter(...)
     
@@ -52,5 +54,19 @@ end
 function GameState:resize(w, h)
     if self.current then self.current:resize(w, h) end
 end
+
+-- TODO: stupid fix for attempt to call method 'focus' (a nil value) - kill me
+function GameState:focus(focused)
+    if self.current and type(self.current.focus) == "function" then
+        self.current:focus(focused)
+    end
+end
+
+-- TODO: stupid fix for attempt to call method 'mousemoved' (a nil value) - kill me
+function GameState:mousemoved(x, y, dx, dy)
+    if self.current and type(self.current.mousemoved) == "function" then
+      self.current:mousemoved(x, y, dx, dy)
+    end
+  end  
 
 return GameState

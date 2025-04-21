@@ -1,6 +1,6 @@
 local Debug = {
     enabled = true,
-    logs = {},
+    logs    = {},
     maxLogs = 20
 }
 
@@ -9,43 +9,53 @@ function Debug:toggle()
     self.enabled = not self.enabled
 end
 
--- Add a debug log
+-- Add a debug log entry
 function Debug:log(message)
     if not self.enabled then return end
-    
+
+    -- insert newest at top
     table.insert(self.logs, 1, {
         message = message,
-        time = os.time()
+        time    = os.time()
     })
-    
-    -- Keep logs at max size
+
+    -- keep at most maxLogs
     if #self.logs > self.maxLogs then
-        table.remove(self.logs)
+        table.remove(self.logs)   -- removes last
     end
-    
+
+    -- also print to console
     print("[DEBUG] " .. message)
 end
 
--- Draw debug info
+-- Draw all on‑screen debug info
 function Debug:draw()
     if not self.enabled then return end
-    
-    -- Draw FPS counter
+
+    -- save the current font, then switch to a small one
+    local prevFont = love.graphics.getFont()
+    love.graphics.setFont(Fonts.small)
+
+    -- 1) FPS counter
     love.graphics.setColor(0, 1, 0, 1)
     love.graphics.print("FPS: " .. love.timer.getFPS(), 10, 10)
-    
-    -- Draw log messages
+
+    -- 2) Recent logs
     love.graphics.setColor(1, 1, 1, 1)
-    for i, log in ipairs(self.logs) do
-        love.graphics.print(log.message, 10, 30 + (i-1) * 20)
+    local lineHeight = Fonts.small:getHeight() + 2
+    for i, entry in ipairs(self.logs) do
+        love.graphics.print(entry.message, 10, 30 + (i-1) * lineHeight)
     end
-    
-    -- Draw memory usage
+
+    -- 3) Memory usage
     local mem = collectgarbage("count")
-    love.graphics.print(string.format("Memory: %.2f KB", mem), 10, love.graphics.getHeight() - 30)
-    
-    -- Reset color
-    love.graphics.setColor(1, 1, 1, 1)
+    local _, windowH = love.graphics.getDimensions()
+    local memTextY = windowH - (Fonts.small:getHeight() + 5)
+    love.graphics.print(string.format("Memory: %.2f KB", mem), 10, memTextY)
+
+    -- restore color & font
+    love.graphics.setColor(1,1,1,1)
+    love.graphics.setFont(prevFont)
 end
 
 return Debug
