@@ -44,6 +44,7 @@ local Constants = {
         DASH_POWER = 600,
         DASH_COOLDOWN = 1.0
     },
+
     
     -- Enemy settings
     ENEMY = {
