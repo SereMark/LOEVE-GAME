@@ -1,34 +1,29 @@
-function love.conf(t)
-    t.version = "11.4"                        -- The LÖVE version this game was made for
-    t.console = true                          -- Attach a console (Windows only)
+--[[
+    conf.lua
+    LÖVE Configuration file
+]]--
 
-    t.window.title = "Untitled Adventure"     -- Game title
-    t.window.icon = "assets/images/icon.png"  -- Game window icon
-    t.window.width = 1280                     -- Window width
-    t.window.height = 720                     -- Window height
-    t.window.minwidth = 800                   -- Minimum window width
-    t.window.minheight = 600                  -- Minimum window height
-    t.window.resizable = true                 -- Let the window be user-resizable
-    t.window.fullscreen = false               -- Enable fullscreen
-    t.window.vsync = true                     -- Enable vertical sync
-    t.window.msaa = 2                         -- MSAA anti-aliasing level
+function love.conf(t)
+    -- Game identity information
+    t.identity = "loeve-game"    -- The name of the save directory
+    t.version = "11.5"           -- LÖVE version this game was made for
+    t.console = true             -- Enable console for debug outputs
     
-    t.modules.audio = true                    -- Enable the audio module
-    t.modules.data = true                     -- Enable the data module
-    t.modules.event = true                    -- Enable the event module
-    t.modules.font = true                     -- Enable the font module
-    t.modules.graphics = true                 -- Enable the graphics module
-    t.modules.image = true                    -- Enable the image module
-    t.modules.joystick = true                 -- Enable the joystick module
-    t.modules.keyboard = true                 -- Enable the keyboard module
-    t.modules.math = true                     -- Enable the math module
-    t.modules.mouse = true                    -- Enable the mouse module
-    t.modules.physics = true                  -- Enable the physics module
-    t.modules.sound = true                    -- Enable the sound module
-    t.modules.system = true                   -- Enable the system module
-    t.modules.thread = true                   -- Enable the thread module
-    t.modules.timer = true                    -- Enable the timer module
-    t.modules.touch = true                    -- Enable the touch module
-    t.modules.video = true                    -- Enable the video module
-    t.modules.window = true                   -- Enable the window module
+    -- Window configuration
+    t.window.title = "LOEVE Game"-- The window title
+    t.window.width = 1280        -- Window width
+    t.window.height = 720        -- Window height
+    t.window.resizable = true    -- Allow window resizing
+    t.window.vsync = 1           -- Vertical sync mode (1 = on)
+    
+    -- Required modules
+    t.modules.event = true       -- Required for input handling
+    t.modules.font = true        -- Required for text rendering
+    t.modules.graphics = true    -- Required for all rendering
+    t.modules.keyboard = true    -- Required for keyboard input
+    t.modules.math = true        -- Required for calculations
+    t.modules.mouse = true       -- Required for mouse input
+    t.modules.system = true      -- Required for system access
+    t.modules.timer = true       -- Required for game loop
+    t.modules.window = true      -- Required for window management
 end

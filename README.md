@@ -48,64 +48,6 @@ cd LOEVE-GAME
 love .
 ```
 
-## 🎮 Controls
-
-### Development Controls
-| Key | Action |
-|-----|--------|
-| F1 | Toggle debug overlay |
-| F5 | Restart game |
-| F11 | Toggle fullscreen |
-
-### Current Test Controls
-| Key | Action |
-|-----|--------|
-| WASD / Arrow Keys | Move player |
-| Space | Change player color |
-| Escape | Pause game |
-| M | Return to menu |
-
-*Note: Controls may change as the game develops*
-
-## 📁 Project Structure
-
-```
-root
-│   conf.lua                # LÖVE configuration
-│   LICENSE                 # License file
-│   main.lua                # Main entry point
-│   README.md               # This file
-│   
-├───.vscode
-│       launch.json         # VSCode configuration
-│       
-├───assets
-│   ├───fonts               # Game fonts
-│   ├───images              # Sprites and graphics
-│   ├───music               # Background music
-│   └───sounds              # Sound effects
-│
-├───libs
-│       class.lua           # OOP implementation
-│
-└───src
-    │   constants.lua       # Game settings and constants
-    │
-    ├───entities
-    │       entity.lua      # Base entity class
-    │       player.lua      # Player implementation
-    │
-    ├───states
-    │       gamestate.lua   # State manager
-    │       menustate.lua   # Menu state
-    │       playstate.lua   # Play state
-    │       state.lua       # Base state class
-    │
-    └───utils
-            debug.lua       # Debug utilities
-            helpers.lua     # Helper functions
-```
-
 ## 🎯 Current Status
 
 This project is in active development. We are currently:
